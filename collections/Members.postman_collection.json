@@ -1,0 +1,143 @@
+{
+  "info": {
+    "_postman_id": "9ce4df75-54f5-45a3-801b-73822ebbdd0a",
+    "name": "Members",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "save",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{  \n   \"firstName\":\"Vasya\",\n   \"lastName\":\"Pupkin\",\n   \"birthDate\":\"20-12-1988\",\n   \"postalCode\":\"14032\",\n   \"picture\":\"/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAPABQADASIAAhEBAxEB/8QAGwAAAgMBAQEAAAAAAAAAAAAAAwQBAgUGAAf/xABDEAACAQMDAwMCBQIFAwIFAgcBAgMABBESITEFQVETImEycQYUQoGRI6EVUrHB0SQzYnLhBxZDgvDxNFNjkiU1k6L/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKREBAQACAgMAAgMBAAICAwAAAAECERIhAzFBBFETImEyQnEjgQUUcv/aAAwDAQACEQMRAD8ARuIRFKVwc8EYxig+8MMNgeQa2uqWc0VzDNNcR3KTr7JkIOrPn5rDcaHKnNZIsbFnJcOY5bTEko9rRYyW/al7u8nZmaSNomzhkxjFJwNNAwuYHKtGwOVO4q91fS30jyzaS7nJOMUY4yFe0qmqP1TnGcHb/evRx6pAqyL7ux2pvpvVoLWxeCWAtITkMDkH4IoM0tpOdSxei5/yn20W2J6T+UcZU4z996GqGOQqyn9qmQSQEMpLKd9jmjJOsiZOdXY9xS5WDWjHTJ4kvYXdygRwclc7favpidb6NdWil7mAxsPofH+lfMraCORSGlVMHxmjvbtEupJAw8g0+c2cy0+gmTp1q4nsWtG9UqChcAAk4DDxWvGzvDltIcjcKcgGvk3qaEDMd+4G9bXTOs39nAZIWkMDNuWQsufv2rSZSqmdvt1FukvSeoATESJctpDg8Hmmuq9XTpie\"\n}"
+        },
+        "url": {
+          "raw": "localhost:8080/member",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "member"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\n        \"firstName\": \"Vasya\",\n        \"lastName\": \"Pupkin\",\n        \"birthDate\": \"20-12-1988\",\n        \"postalCode\": 14032,\n        \"picture\": \"/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAPABQADASIAAhEBAxEB/8QAGwAAAgMBAQEAAAAAAAAAAAAAAwQBAgUGAAf/xABDEAACAQMDAwMCBQIFAwIFAgcBAgMABBESITEFQVETImEycQYUQoGRI6EVUrHB0SQzYnLhBxZDgvDxNFNjkiU1k6L/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKREBAQACAgMAAgMBAAICAwAAAAECERIhAzFBBFETImEyQnEjgQUUcv/aAAwDAQACEQMRAD8ARuIRFKVwc8EYxig+8MMNgeQa2uqWc0VzDNNcR3KTr7JkIOrPn5rDcaHKnNZIsbFnJcOY5bTEko9rRYyW/al7u8nZmaSNomzhkxjFJwNNAwuYHKtGwOVO4q91fS30jyzaS7nJOMUY4yFe0qmqP1TnGcHb/evRx6pAqyL7ux2pvpvVoLWxeCWAtITkMDkH4IoM0tpOdSxei5/yn20W2J6T+UcZU4z996GqGOQqyn9qmQSQEMpLKd9jmjJOsiZOdXY9xS5WDWjHTJ4kvYXdygRwclc7favpidb6NdWil7mAxsPofH+lfMraCORSGlVMHxmjvbtEupJAw8g0+c2cy0+gmTp1q4nsWtG9UqChcAAk4DDxWvGzvDltIcjcKcgGvk3qaEDMd+4G9bXTOs39nAZIWkMDNuWQsufv2rSZSqmdvt1FukvSeoATESJctpDg8Hmmuq9XTpie\",\n        \"id\": \"5c41aac76016be13e96d801d\"\n  \n}"
+        },
+        "url": {
+          "raw": "localhost:8080/member/23",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "member",
+            "23"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getAll",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "localhost:8080/member/",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "member",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getById",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "localhost:8080/member/5c40e40a6016be3a22c9c6b7",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "member",
+            "5c40e40a6016be3a22c9c6b7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "localhost:8080/member/5c41aa276016be1287e705eb",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "member",
+            "5c41aa276016be1287e705eb"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

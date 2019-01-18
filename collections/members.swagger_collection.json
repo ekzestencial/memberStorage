@@ -1,0 +1,238 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Members",
+    "description": "TODO: Add Description",
+    "contact": {}
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/member": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "save",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "MemberPost",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/saveRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "getAll",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "MemberGet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/member/23": {
+      "put": {
+        "description": "TODO: Add Description",
+        "summary": "update",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Member23Put",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/updateRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/member/5c40e40a6016be3a22c9c6b7": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "getById",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Member5c40e40a6016be3a22c9c6b7Get",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/member/5c41aa276016be1287e705eb": {
+      "delete": {
+        "description": "TODO: Add Description",
+        "summary": "delete",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Member5c41aa276016be1287e705ebDelete",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "saveRequest": {
+      "title": "saveRequest",
+      "example": {
+        "firstName": "Vasya",
+        "lastName": "Pupkin",
+        "birthDate": "20-12-1988",
+        "postalCode": "14032",
+        "picture": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAPABQADASIAAhEBAxEB/8QAGwAAAgMBAQEAAAAAAAAAAAAAAwQBAgUGAAf/xABDEAACAQMDAwMCBQIFAwIFAgcBAgMABBESITEFQVETImEycQYUQoGRI6EVUrHB0SQzYnLhBxZDgvDxNFNjkiU1k6L/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKREBAQACAgMAAgMBAAICAwAAAAECERIhAzFBBFETImEyQnEjgQUUcv/aAAwDAQACEQMRAD8ARuIRFKVwc8EYxig+8MMNgeQa2uqWc0VzDNNcR3KTr7JkIOrPn5rDcaHKnNZIsbFnJcOY5bTEko9rRYyW/al7u8nZmaSNomzhkxjFJwNNAwuYHKtGwOVO4q91fS30jyzaS7nJOMUY4yFe0qmqP1TnGcHb/evRx6pAqyL7ux2pvpvVoLWxeCWAtITkMDkH4IoM0tpOdSxei5/yn20W2J6T+UcZU4z996GqGOQqyn9qmQSQEMpLKd9jmjJOsiZOdXY9xS5WDWjHTJ4kvYXdygRwclc7favpidb6NdWil7mAxsPofH+lfMraCORSGlVMHxmjvbtEupJAw8g0+c2cy0+gmTp1q4nsWtG9UqChcAAk4DDxWvGzvDltIcjcKcgGvk3qaEDMd+4G9bXTOs39nAZIWkMDNuWQsufv2rSZSqmdvt1FukvSeoATESJctpDg8Hmmuq9XTpie"
+      },
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "birthDate": {
+          "type": "string"
+        },
+        "postalCode": {
+          "type": "string"
+        },
+        "picture": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "firstName",
+        "lastName",
+        "birthDate",
+        "postalCode",
+        "picture"
+      ]
+    },
+    "updateRequest": {
+      "title": "updateRequest",
+      "example": {
+        "firstName": "Vasya",
+        "lastName": "Pupkin",
+        "birthDate": "20-12-1988",
+        "postalCode": 14032,
+        "picture": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAPABQADASIAAhEBAxEB/8QAGwAAAgMBAQEAAAAAAAAAAAAAAwQBAgUGAAf/xABDEAACAQMDAwMCBQIFAwIFAgcBAgMABBESITEFQVETImEycQYUQoGRI6EVUrHB0SQzYnLhBxZDgvDxNFNjkiU1k6L/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKREBAQACAgMAAgMBAAICAwAAAAECERIhAzFBBFETImEyQnEjgQUUcv/aAAwDAQACEQMRAD8ARuIRFKVwc8EYxig+8MMNgeQa2uqWc0VzDNNcR3KTr7JkIOrPn5rDcaHKnNZIsbFnJcOY5bTEko9rRYyW/al7u8nZmaSNomzhkxjFJwNNAwuYHKtGwOVO4q91fS30jyzaS7nJOMUY4yFe0qmqP1TnGcHb/evRx6pAqyL7ux2pvpvVoLWxeCWAtITkMDkH4IoM0tpOdSxei5/yn20W2J6T+UcZU4z996GqGOQqyn9qmQSQEMpLKd9jmjJOsiZOdXY9xS5WDWjHTJ4kvYXdygRwclc7favpidb6NdWil7mAxsPofH+lfMraCORSGlVMHxmjvbtEupJAw8g0+c2cy0+gmTp1q4nsWtG9UqChcAAk4DDxWvGzvDltIcjcKcgGvk3qaEDMd+4G9bXTOs39nAZIWkMDNuWQsufv2rSZSqmdvt1FukvSeoATESJctpDg8Hmmuq9XTpie",
+        "id": "5c41aac76016be13e96d801d"
+      },
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "birthDate": {
+          "type": "string"
+        },
+        "postalCode": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "picture": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "firstName",
+        "lastName",
+        "birthDate",
+        "postalCode",
+        "picture",
+        "id"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}
