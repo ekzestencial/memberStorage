@@ -17,7 +17,8 @@ These instructions will get you a copy of the project up and running on your loc
 dir `collections` in the root  with postman and swagger collection
 
 #Deployment
-run docker-compose up 
+run: mvn clean install
+run: docker-compose up 
 
 #Built With
 Maven - Dependency Management
