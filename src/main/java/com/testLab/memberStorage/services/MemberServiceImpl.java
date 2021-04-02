@@ -46,7 +46,7 @@ public class MemberServiceImpl implements MemberService {
         Member existingMember = repository
                 .findById(id)
                 .get();
-        log.info(String.format("deleted %s", existingMember));
+        log.info(String.format("deleted %s1", existingMember));
         repository.delete(existingMember);
 
 
